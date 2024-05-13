@@ -8,7 +8,6 @@ import {
   SendProps,
   SystemMessage,
 } from 'react-native-gifted-chat'
-import { SafeAreaView } from 'react-native-safe-area-context'
 import { NavBar } from './components/navbar'
 import AccessoryBar from './example-expo/AccessoryBar'
 import CustomActions from './example-expo/CustomActions'
@@ -231,7 +230,6 @@ const App = () => {
   }, [])
 
   return (
-    <SafeAreaView style={styles.container}>
       <NavBar />
       <View style={styles.content}>
         <GiftedChat
@@ -266,7 +264,6 @@ const App = () => {
           infiniteScroll
         />
       </View>
-    </SafeAreaView>
   )
 }
 
